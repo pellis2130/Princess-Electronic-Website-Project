@@ -1,1 +1,3 @@
-<?php header("Location: catalog.php"); ?>
+<?php
+header("Location: view/catalog.php");
+?>
