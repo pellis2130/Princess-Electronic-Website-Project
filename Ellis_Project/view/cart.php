@@ -64,6 +64,13 @@ $total = $subtotal + $tax + $shipping;
 
 <br>
 
+<a href="../controller/product_controller.php?checkout=true"
+   onclick="return confirm('Checkout will clear your cart. Continue?');">
+   Checkout
+</a>
+
+<br><br>
+
 <a href="catalog.php">Back to Catalog</a>
 
 <hr>

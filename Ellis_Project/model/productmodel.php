@@ -24,5 +24,10 @@ function decreaseProduct($id) {
 function removeProduct($id) {
     $conn = getDB();
     $conn->query("UPDATE products SET QuantityInCart = 0 WHERE ProductId = '$id'");
+
+function clearCart() {
+    $conn = getDB();
+    $conn->query("UPDATE products SET QuantityInCart = 0");
+}
 }
 ?>

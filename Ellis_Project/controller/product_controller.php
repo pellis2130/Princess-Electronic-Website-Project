@@ -16,6 +16,11 @@ if (isset($_GET['decrease'])) {
 if (isset($_GET['remove'])) {
     removeProduct($_GET['remove']);
 }
-
 $products = getProducts();
+
+if (isset($_GET['checkout'])) {
+    clearCart();
+    header("Location: ../view/catalog.php");
+    exit();
+}
 ?>
